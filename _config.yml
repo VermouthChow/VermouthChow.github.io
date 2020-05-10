@@ -27,6 +27,20 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: test1
 github_username:  test2
 
+# permalink
+permalink: pretty
+
+# jekyll-paginate
+paginate: 5
+paginate_path: "/blog/page:num/"
+
+# collections
+collections:
+  my_collection:
+    output: true
+    permalink: /:collection/:name
+
+
 # Build settings
 theme: minima
 plugins:
