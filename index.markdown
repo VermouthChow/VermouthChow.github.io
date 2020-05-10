@@ -2,21 +2,26 @@
 # Feel free to add content and custom Front Matter to this file.
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
-layout: home
+<!-- layout: home -->
+title: Elle's Blog
 ---
+<br>
 <!-- This loops through the paginated posts -->
-{% for post in paginator.posts %}
-  <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
-  <p class="author">
-    <span class="date">{{ post.date }}</span>
-  </p>
-  <div class="content">
-    {{ post.content }}
-  </div>
-{% endfor %}
+<div>
+  {% for post in paginator.posts %}
+    <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+    <p class="author">
+      <span class="date">{{ post.date }}</span>
+    </p>
+    <div class="content">
+      {{ post.content }}
+    </div>
+  {% endfor %}
+</div>
+
 
 <!-- Pagination links -->
-<div class="pagination">
+<!-- <div class="pagination">
   {% if paginator.previous_page %}
     <a href="{{ paginator.previous_page_path }}" class="previous">
       Previous
@@ -32,4 +37,4 @@ layout: home
   {% else %}
     <span class="next ">Next</span>
   {% endif %}
-</div>
+</div> -->

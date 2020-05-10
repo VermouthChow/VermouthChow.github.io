@@ -31,14 +31,14 @@ github_username:  test2
 permalink: pretty
 
 # jekyll-paginate
-paginate: 5
+paginate: 1
 paginate_path: "/blog/page:num/"
 
 # collections
 collections:
   my_collection:
     output: true
-    permalink: /:collection/:name
+    permalink: /:collection/:title
 
 
 # Build settings
